@@ -1,0 +1,70 @@
+<div class="container">
+
+
+    <div class="row form-group">
+        <div class="col-md-12">
+            <a id="LinkDashboard" class="clickable">Dashboard</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <img src="/images/pageicons/servicesstore_pageicons-requestcall.png"/>
+        </div>
+        <div class="col-md-6">
+            <h1>Request a Sales Call</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <p>Enter your name and phone number and press submit!, will call you in a few minutes to discuss your
+                requirements.</p>
+        </div>
+
+    </div>
+    <div class="row form-group">
+        <div class="col-md-12">
+        <label for="TextName">Name</label>
+        <input type="Text" class="form-control" id="TextName" placeholder="Enter name">
+
+        <div id="AlertTextName" class="alert alert-danger" role="alert">Last Name is required!</div>
+            </div>
+    </div>
+
+    <div class="row form-group">
+        <div class="col-md-12">
+        <label for="TextPhoneNumber">Phone number</label>
+        <input class="form-control" id="TextPhoneNumber" placeholder="Enter phone number">
+
+        <div id="AlertTextPhoneNumber" class="alert alert-danger" role="alert">Phone Number is required!</div>
+            </div>
+    </div>
+    <hr>
+    <div class="row form-group">
+        <div class="col-md-12">
+        <button type="submit" class="btn btn-primary" id="SubmitSalesCallRequest">Submit</button>
+            </div>
+    </div>
+
+
+</div>
+
+<div class="modal fade" id="SalesRequestSentModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Leopard Data Services Store</h4>
+            </div>
+            <div class="modal-body">
+                <p id="ParagraphSalesRequestStatus">Your sales call request was sent, you will receive a call from us
+                    shortly!</p>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div><!-- /.modal -->

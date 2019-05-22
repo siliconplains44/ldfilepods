@@ -1,0 +1,2 @@
+pyinstaller --windowed --clean --icon c:\projects\filepodsg\filepodswxpy\icon.ico --onefile c:\projects\filepodsg\filepodswxpy\main.py --distpath c:\projects\filepodsg\dist\windows
+rmdir /q /s c:\projects\filepodsg\filepodswxpy\build

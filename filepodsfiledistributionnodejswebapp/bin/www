@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+var https = require('https');
+var fs = require('fs');
+var debug = require('debug')('filepodsfiledistributornodejswebapp');
+var app = require('../app');
+
+ // options non signed cert
+
+var sslOptions = {
+    key: fs.readFileSync(__dirname + '/../certs2016/leoparddata.key'),
+    cert: fs.readFileSync(__dirname + '/../certs2016/48a67353a0ab3cfa.crt'),
+    ca: [fs.readFileSync(__dirname + '/../certs2016/gd1.crt'), fs.readFileSync(__dirname + '/../certs2016/gd2.crt'), fs.readFileSync(__dirname + '/../certs2016/gd3.crt')],
+    requestCert: true,
+    rejectUnauthorized: false
+};
+
+var secureServer = https.createServer(sslOptions,app).listen('50300', function(){
+    console.log("Secure Express server listening on port 50300");
+});
+
+

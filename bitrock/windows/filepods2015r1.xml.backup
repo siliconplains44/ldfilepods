@@ -1,0 +1,128 @@
+<project>
+    <shortName>FilePods2015r1</shortName>
+    <fullName>Leopard Data File Pods 2015 r1</fullName>
+    <version>2015.1</version>
+    <wrapLicenseFileText>0</wrapLicenseFileText>
+    <logoImage>C:/projects/isfileshareg/filesharewxpy/splash.png</logoImage>
+    <splashImage>C:/projects/isfileshareg/filesharewxpy/splash.png</splashImage>
+    <componentList>
+        <component>
+            <name>default</name>
+            <description>Default Component</description>
+            <canBeEdited>1</canBeEdited>
+            <selected>1</selected>
+            <show>1</show>
+            <desktopShortcutList>
+                <shortcut>
+                    <comment></comment>
+                    <exec>${installdir}/main</exec>
+                    <icon></icon>
+                    <name>Leopard Data File Pods 2015 r1</name>
+                    <noPinToStart>0</noPinToStart>
+                    <path></path>
+                    <platforms>all</platforms>
+                    <runAsAdmin>1</runAsAdmin>
+                    <runInTerminal>0</runInTerminal>
+                    <windowsExec>${installdir}\windows\main.exe</windowsExec>
+                    <windowsExecArgs>w</windowsExecArgs>
+                    <windowsIcon></windowsIcon>
+                    <windowsPath></windowsPath>
+                </shortcut>
+            </desktopShortcutList>
+            <folderList>
+                <folder>
+                    <description>Program Files</description>
+                    <destination>${installdir}</destination>
+                    <name>programfiles</name>
+                    <platforms>all</platforms>
+                    <shortcutList>
+                        <shortcut>
+                            <comment>Uninstall</comment>
+                            <exec>${installdir}/${uninstallerName}</exec>
+                            <icon></icon>
+                            <name>Uninstall ${product_fullname}</name>
+                            <path>${installdir}</path>
+                            <platforms>all</platforms>
+                            <runAsAdmin>0</runAsAdmin>
+                            <runInTerminal>0</runInTerminal>
+                            <windowsExec>${installdir}/${uninstallerName}.exe</windowsExec>
+                            <windowsExecArgs></windowsExecArgs>
+                            <windowsIcon>${installdir}\windows\icon.ico</windowsIcon>
+                            <windowsPath>${installdir}</windowsPath>
+                        </shortcut>
+                        <shortcut>
+                            <comment></comment>
+                            <exec>${installdir}/main w</exec>
+                            <icon></icon>
+                            <name>Leopard Data File Pods 2015 r1</name>
+                            <path>${installdir}</path>
+                            <platforms>all</platforms>
+                            <runAsAdmin>1</runAsAdmin>
+                            <runInTerminal>0</runInTerminal>
+                            <windowsExec>${installdir}\windows\main.exe</windowsExec>
+                            <windowsExecArgs></windowsExecArgs>
+                            <windowsIcon>${installdir}\windows\icon.ico</windowsIcon>
+                            <windowsPath></windowsPath>
+                        </shortcut>
+                    </shortcutList>
+                </folder>
+                <folder>
+                    <description>Program Files</description>
+                    <destination>${installdir}</destination>
+                    <name>programfileslinux</name>
+                    <platforms>linux</platforms>
+                </folder>
+                <folder>
+                    <description>Program Files</description>
+                    <destination>${installdir}</destination>
+                    <name>programfileswindows</name>
+                    <platforms>windows</platforms>
+                    <distributionFileList>
+                        <distributionDirectory>
+                            <origin>C:\projects\filepodsg\dist\windows</origin>
+                        </distributionDirectory>
+                    </distributionFileList>
+                </folder>
+                <folder>
+                    <description>Program Files</description>
+                    <destination>${installdir}</destination>
+                    <name>programfilesosx</name>
+                    <platforms>osx</platforms>
+                </folder>
+            </folderList>
+            <startMenuShortcutList>
+                <startMenuShortcut>
+                    <comment></comment>
+                    <name>Leopard Data File Pods 2015 r1</name>
+                    <runAsAdmin>0</runAsAdmin>
+                    <runInTerminal>0</runInTerminal>
+                    <windowsExec>${installdir}\windows\main.exe</windowsExec>
+                    <windowsExecArgs></windowsExecArgs>
+                    <windowsIcon>${installdir}\windows\icon.ico</windowsIcon>
+                    <windowsPath>${installdir}\windows</windowsPath>
+                </startMenuShortcut>
+            </startMenuShortcutList>
+        </component>
+    </componentList>
+    <enableRollback>1</enableRollback>
+    <enableTimestamp>1</enableTimestamp>
+    <requireInstallationByRootUser>1</requireInstallationByRootUser>
+    <vendor>Leopard Data</vendor>
+    <windowsSigningPkcs12File>C:/projects/isfileshareg/dist/windows/server.p12</windowsSigningPkcs12File>
+    <parameterList>
+        <directoryParameter>
+            <name>installdir</name>
+            <description>Installer.Parameter.installdir.description</description>
+            <explanation>Installer.Parameter.installdir.explanation</explanation>
+            <value></value>
+            <default>${platform_install_prefix}/${product_shortname}-${product_version}</default>
+            <allowEmptyValue>0</allowEmptyValue>
+            <ask>yes</ask>
+            <cliOptionName>prefix</cliOptionName>
+            <mustBeWritable>yes</mustBeWritable>
+            <mustExist>0</mustExist>
+            <width>40</width>
+        </directoryParameter>
+    </parameterList>
+</project>
+

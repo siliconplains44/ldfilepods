@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>file Share File Distributor</title>
+    <LINK href="/bootstrap-3.2.0-dist/css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <LINK href="/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+</head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <div class="jumbotron">
+                <h1>file PODS</h1>
+                <p>A solution by Leopard Data <a href="https://www.leoparddata.com">https://www.leoparddata.com</a></p>
+                <p>Account Management <a href="https://servicesstore.leoparddata.com">https://servicesstore.leoparddata.com</a></p>
+            </div>
+
+            <div class="row">
+
+                <div class="form-group">
+                    <label for="EnterCodeTextBox">File Code</label>
+                    <input type="text" class="form-control" id="EnterCodeTextBox" placeholder="Enter Code">
+                </div>
+                <button id="DownloadFileButton" class="btn btn-default">Download File</button>
+            </div>
+            <hr />
+            <footer>
+                <p>&copy; 2014 - Leopard Data</p>
+            </footer>
+        </div>
+    </body>
+</html>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript">
+
+    $(function() {
+
+        $('#DownloadFileButton').click(function () {
+            var identifier = $('#EnterCodeTextBox').val();
+
+            if (identifier.length > 0) {
+                window.location = '/downloadfile?identifier=' + identifier;
+            }
+            else
+                alert('You must enter a code before pressing the "Download File" button');
+        });
+
+    })
+
+</script>

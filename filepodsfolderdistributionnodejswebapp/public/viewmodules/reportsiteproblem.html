@@ -1,0 +1,55 @@
+<div class="container">
+
+
+    <div class="row form-group">
+        <div class="col-md-12">
+        <a id="LinkDashboard" class="clickable">Dashboard</a>
+    </div>
+        </div>
+    <div class="row">
+        <div class="col-md-2">
+            <img src="/images/pageicons/servicesstore_pageicons-reportsiteproblem.png"/>
+        </div>
+        <div class="col-md-6">
+            <h1>Report a Site Problem</h1>
+        </div>
+    </div>
+    <hr>
+
+        <div class="row form-group">
+            <div class="col-md-12">
+            <p>So you found a problem with this website.  Please use the form below to tell us about it.  Thank you for your submission!</p>
+</div>        </div>
+
+    <div class="row form-group">
+        <div class="col-md-12">
+        <label for="TextProblem">Problem</label>
+        <textarea class="form-control" rows="7" id="TextProblem"></textarea>
+        <div id="AlertTextProblem" class="alert alert-danger" role="alert">Problem is required!</div>
+</div>
+    </div>
+
+    <div class="row form-group">
+        <div class="col-md-12">
+        <button type="button" class="btn btn-primary" id="ButtonSubmit">Submit</button>
+    </div>
+        </div>
+
+
+</div>
+
+<div class="modal fade" id="ProblemSubmittedModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Leopard Data Services Store</h4>
+            </div>
+            <div class="modal-body">
+                <p id="ParagraphStatus">Your problem has been submitted!  Thank you very much for helping us to build the highest quality website possible!</p>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
