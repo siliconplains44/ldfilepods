@@ -16,5 +16,7 @@ Technologies
 * MySQL
 * Google Cloud/Azure/AWS
 * Microservices
+* BitRock cross platform installer
+
 
 
